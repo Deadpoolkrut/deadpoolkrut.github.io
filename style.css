@@ -27,9 +27,9 @@ input {
 	border: 5px solid rgb(184, 134, 11);
 }
 button {
-	position: absolute;
-	top: 580px;
-	right: 994px;
+	position: relative;
+	top: 50px;
+	right: 100px;
 	border: 0 solid;
 	background-color: rgb(184, 134, 11);
 }
@@ -38,4 +38,8 @@ button:hover {
 }
 input:focus{
 outline: none;
+}
+#password{
+	position: relative;
+	right: -28px;
 }
