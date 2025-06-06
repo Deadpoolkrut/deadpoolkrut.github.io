@@ -1,7 +1,8 @@
 body {
 	background-image: url("lambda_fortres.jpg");
 	background-position: center top;
-	 background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 div {
