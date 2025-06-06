@@ -29,7 +29,7 @@ input {
 button {
 	position: relative;
 	top: 50px;
-	right: 200px;
+	right: -200px;
 	border: 0 solid;
 	background-color: rgb(184, 134, 11);
 }
