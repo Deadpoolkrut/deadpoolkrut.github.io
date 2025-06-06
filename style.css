@@ -43,3 +43,8 @@ outline: none;
 	position: relative;
 	right: -28px;
 }
+p{
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
