@@ -9,7 +9,7 @@ document.getElementById('authForm').addEventListener('submit', function(e) {
   // Проверяем логин и пароль (замените на свои значения)
   if (login === "76561199192370315" && password === "Waldron") {
     // Перенаправление при успешной авторизации
-    window.location.href = "Lambda Fortress.html";
+    window.location.href = "LambdaFortress.html";
   } else {
     // Показываем ошибку
     document.getElementById('error').style.display = 'block';
