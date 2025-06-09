@@ -19,10 +19,31 @@
 На подходе был обнаружен зараженный особо крупного размера и неопознанное лицо, появившиеся позади отряда, предположительно, работающее совместно с двумя докторами.
 
 Последующая информация засекречена из-за низкого уровня доступа. </p>
-<input type="password" placeholder="введите код доступа">
-<button>Получить доступ</button>
-<p></p>
+<input type="password" placeholder="введите код доступа" id="keywordInput">
+<button id="checkbutton">Получить доступ</button>
+<p id="audioContainer"> <audio controls> <source="2medics secret.wav" type="audio/wav"> </audio></p>
 </div>
 <img src="lIncindent_tf2_1RE.png" class="stat">
+    <script>
+        const inputField = document.getElementById('keywordInput');
+        const checkButton = document.getElementById('checkButton');
+        const audioContainer = document.getElementById('audioContainer');
+        const audioPlayer = audioContainer.querySelector('audio');
+
+        // Настройки (можно менять)
+        const secretWord = "deadpool_cool"; // Замените на своё слово
+        const audioFile = "2medics secret.wav"; // Укажите свой файл
+
+        checkButton.addEventListener('click', function() {
+            if (inputField.value.toLowerCase().trim() === secretWord) {
+                audioPlayer.src = audioFile; // Загружаем аудио
+                audioContainer.style.display = 'block'; // Показываем плеер
+            } else {
+                alert("Доступ закрыт!");
+            }
+            inputField.value = ''; // Очищаем поле
+        });
+    </script>
+</body>
 </body>
 </html>
