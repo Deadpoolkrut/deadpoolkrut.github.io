@@ -48,3 +48,20 @@ button{
 button:focus {
 	outline: none;
 }
+.main{
+	position: relative;
+	bottom: 1150px;
+	left: 890px;
+	width: 200px;
+	height: 200px; 
+	overflow: hidden;
+	color: rgb(40, 61, 248);
+}
+audio::-webkit-media-controls-timeline {
+  display: none !important;
+}
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+  display: none !important;
+}
+
