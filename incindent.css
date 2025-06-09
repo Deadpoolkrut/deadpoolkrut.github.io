@@ -21,10 +21,10 @@ img {
 	left: 897px;
 	bottom: 434px;
 	border: 5px solid rgb(44, 36, 36);
-	position: absolute;
+	position: relative;
 }
 input {
-	position: absolute;
+	position: relative;
 	left:150px;
 	border: 2 solid rgb(0, 0, 0);
 	width: 300px;
