@@ -12,7 +12,7 @@ body {
     align-items: center;
 }
 
-.container {
+div {
     width: 80%; /* Адаптивная ширина */
     max-width: 1200px; /* Максимальная ширина */
     border: 5px solid rgb(44, 36, 36);
