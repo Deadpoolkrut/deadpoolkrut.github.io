@@ -1,67 +1,85 @@
 body {
-	background-color: rgb(255, 255, 255);
-	color: rgb(161, 199, 214);
-	background-image: url(1281679839_preview_aJSQRkoaZG.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-color: rgb(255, 255, 255);
+    color: rgb(161, 199, 214);
+    background-image: url(1281679839_preview_aJSQRkoaZG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-div {
- font-align: center;
- border: 5px solid rgb(44, 36, 36);
- margin: 200px 800px 100px 600px; 
- background-color: rgb(37, 37, 37);
- right: 200px;
- bottom: 100px;
- position: relative;
- padding-bottom: 500px;
-}
-img {
-	height: 400px;
-	width: 600px;
-	left: 897px;
-	bottom: 434px;
-	border: 5px solid rgb(44, 36, 36);
-	position: absolute;
-}
-input {
-	position: absolute;
-	left:150px;
-	border: 2 solid rgb(0, 0, 0);
-	width: 300px;
-height: 20px;
-}
-input:hover{
-	border-color: rgb(0, 0, 0);
 
+.container {
+    width: 80%; /* Адаптивная ширина */
+    max-width: 1200px; /* Максимальная ширина */
+    border: 5px solid rgb(44, 36, 36);
+    background-color: rgb(37, 37, 37);
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 2rem auto; /* Центрирование */
 }
+
+img {
+    max-width: 100%; /* Картинка не выйдет за границы контейнера */
+    height: auto;
+    border: 5px solid rgb(44, 36, 36);
+    margin: 1rem 0;
+}
+
+input {
+    width: 80%; /* Ширина относительно контейнера */
+    max-width: 300px;
+    height: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0.5rem auto;
+    display: block;
+}
+
+input:hover {
+    border-color: rgb(0, 0, 0);
+}
+
 input:focus {
-  outline: none;
-   box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
 }
-button:hover{
-	background-color: rgb(52, 66, 80);
+
+button {
+    background-color: rgb(35, 117, 172);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
 }
-button{
-	background-color: rgb(35, 117, 172);
-	border: 0 solid;
+
+button:hover {
+    background-color: rgb(52, 66, 80);
 }
+
 button:focus {
-	outline: none;
+    outline: none;
 }
-.main{
-	position: relative;
-	bottom: 1150px;
-	left: 890px;
-	width: 200px;
-	height: 200px; 
-	overflow: hidden;
-	color: rgb(40, 61, 248);
+
+.main {
+    color: rgb(40, 61, 248);
+    margin: 1rem auto;
+    text-align: center;
 }
-audio::-webkit-media-controls-timeline {
-  display: none !important;
+
+/* Стили для audio (если нужно скрыть элементы управления) */
+audio {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
 }
+
+audio::-webkit-media-controls-timeline,
 audio::-webkit-media-controls-mute-button,
 audio::-webkit-media-controls-volume-slider {
-  display: none !important;
+    display: none !important;
 }
-
