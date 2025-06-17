@@ -1,85 +1,64 @@
 body {
-    background-color: rgb(255, 255, 255);
-    color: rgb(161, 199, 214);
-    background-image: url(1281679839_preview_aJSQRkoaZG.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	background-color: rgb(255, 255, 255);
+	color: rgb(161, 199, 214);
+	background-image: url(1281679839_preview_aJSQRkoaZG.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-
 div {
-    width: 80%; /* Адаптивная ширина */
-    max-width: 1200px; /* Максимальная ширина */
-    border: 5px solid rgb(44, 36, 36);
-    background-color: rgb(37, 37, 37);
-    padding: 2rem;
-    box-sizing: border-box;
-    text-align: center;
-    margin: 2rem auto; /* Центрирование */
+ font-align: center;
+ border: 5px solid rgb(44, 36, 36);
+ margin: 100% 40% 10% 10%; 
+ background-color: rgb(37, 37, 37);
+ right: 10%;
+ top: -196.5%;
+ bottom: -10%;
+ position: absolute;
 }
-
 img {
-    max-width: 100%; /* Картинка не выйдет за границы контейнера */
-    height: auto;
-    border: 5px solid rgb(44, 36, 36);
-    margin: 1rem 0;
+	height: 400px;
+	width: 600px;
+	left: 50%;
+	bottom: 50%;
+	border: 5px solid rgb(44, 36, 36);
+	position: absolute;
 }
-
 input {
-    width: 80%; /* Ширина относительно контейнера */
-    max-width: 300px;
-    height: 30px;
-    border: 2px solid rgb(0, 0, 0);
-    margin: 0.5rem auto;
-    display: block;
+	position: absolute;
+	left:150px;
+	border: 2 solid rgb(0, 0, 0);
+	width: 300px;
+height: 20px;
 }
+input:hover{
+	border-color: rgb(0, 0, 0);
 
-input:hover {
-    border-color: rgb(0, 0, 0);
 }
-
 input:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+  outline: none;
+   box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
 }
-
-button {
-    background-color: rgb(35, 117, 172);
-    border: none;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    cursor: pointer;
+button:hover{
+	background-color: rgb(52, 66, 80);
 }
-
-button:hover {
-    background-color: rgb(52, 66, 80);
+button{
+	background-color: rgb(35, 117, 172);
+	border: 0 solid;
 }
-
 button:focus {
-    outline: none;
+	outline: none;
 }
-
-.main {
-    color: rgb(40, 61, 248);
-    margin: 1rem auto;
-    text-align: center;
+.main{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	overflow: hidden;
+	color: rgb(40, 61, 248);
 }
-
-/* Стили для audio (если нужно скрыть элементы управления) */
-audio {
-    width: 100%;
-    max-width: 300px;
-    margin: 1rem auto;
-    display: block;
+audio::-webkit-media-controls-timeline {
+  display: none !important;
 }
-
-audio::-webkit-media-controls-timeline,
 audio::-webkit-media-controls-mute-button,
 audio::-webkit-media-controls-volume-slider {
-    display: none !important;
+  display: none !important;
 }
